@@ -19,5 +19,5 @@ A lightweight and efficient Python-based desktop application designed to convert
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/your-username/image-to-pdf-converter.git](https://github.com/your-username/image-to-pdf-converter.git)
+   git clone [https://github.com/salmanaf04/image-to-pdf-converter.git](https://github.com/salmanaf04/image-to-pdf-converter.git)
    cd image-to-pdf-converter
