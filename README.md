@@ -1,7 +1,23 @@
-# Build-An-Image-to-PDF-Converter-App
-A lightweight and efficient Python-based desktop application designed to convert images (PNG, JPG, JPEG) into high-quality PDF files instantly. This tool features a clean Graphical User Interface (GUI) built with Tkinter for a seamless user experience and utilizes ReportLab for robust PDF generation.
-✨ Key FeaturesBatch Selection: Select multiple images at once to be merged into one PDF document.Smart Auto-Scaling: Automatically resizes images to fit standard PDF page dimensions while maintaining the original aspect ratio.Precise Centering: Every image is perfectly centered on the page using dynamic coordinate calculation.Custom Output: Users can define a custom name for the generated PDF file.Cross-Platform: Runs on any operating system that supports Python.🛠️ Technical StackPython 3.x: Core programming language.Tkinter: Used for building the Graphical User Interface (GUI).Pillow (PIL): Handles image opening and processing.ReportLab: Manages the programmatic generation of PDF canvases and pages.🚀 Installation & SetupClone the RepositoryBashgit clone https://github.com/your-username/image-to-pdf-converter.git
-cd image-to-pdf-converter
-Install DependenciesEnsure you have Python installed, then run:Bashpip install Pillow reportlab
-Run the ApplicationBashpython app.py
-📖 How to UseClick the "Select Images" button to browse your files.(Optional) Enter your desired filename in the "Output PDF Name" field.Click "Convert to PDF".Your PDF will be generated instantly in the project directory.🧠 Logic BreakdownThe core of this application lies in its spatial calculation to ensure images look professional within the PDF:Canvas Setup: The application uses a standard 612x792 point coordinate system (Letter size).Scaling Logic: To prevent distortion, the code calculates a scale_factor by comparing the image dimensions against the available page margins:$$scale\_factor = \min\left(\frac{available\_width}{img.width}, \frac{available\_height}{img.height}\right)$$Positioning: It calculates the $x$ and $y$ offsets to ensure the image is perfectly centered:$$x\_centered = \frac{612 - new\_width}{2}$$$$y\_centered = \frac{792 - new\_height}{2}$$🤝 ContributingContributions are welcome! If you have suggestions for new features—such as drag-and-drop support or a dark mode—feel free to open an Issue or submit a Pull Request.
+# 🚀 Image to PDF Converter (Python GUI)
+
+A lightweight and efficient Python-based desktop application designed to convert images (PNG, JPG, JPEG) into high-quality PDF files instantly. This tool features a clean Graphical User Interface (GUI) built with **Tkinter** for a seamless user experience and utilizes **ReportLab** for robust PDF generation.
+
+## ✨ Key Features
+* **Batch Conversion**: Select multiple images simultaneously to merge them into a single PDF document.
+* **Smart Scaling**: Automatically adjusts image sizes to fit the PDF page while maintaining the original aspect ratio.
+* **Auto-Centering**: Ensures every image is perfectly centered on the page for a professional look.
+* **Custom Output**: Allows users to specify a custom name for the generated PDF file.
+* **File Management**: Displays a list of selected files within the app before conversion.
+
+## 🛠️ Technical Stack
+* **Python 3.x**: The core programming language.
+* **Tkinter**: For creating the intuitive desktop interface.
+* **Pillow (PIL)**: For advanced image processing and manipulation.
+* **ReportLab**: For programmatic PDF creation and canvas management.
+
+## 🚀 Installation & Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/your-username/image-to-pdf-converter.git](https://github.com/your-username/image-to-pdf-converter.git)
+   cd image-to-pdf-converter
